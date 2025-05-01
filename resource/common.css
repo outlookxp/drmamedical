@@ -5,6 +5,7 @@
     --text-color: #2d3748;  /* 深灰色，用于正文 */
     --light-bg: #f7fafc;  /* 浅灰色背景 */
     --border-color: #e2e8f0;  /* 边框颜色 */
+    --content-bg: #fff9e6;  /* 柔和的黄色背景 */
 }
 
 * {
@@ -16,7 +17,7 @@
 body {
     font-family: Arial, sans-serif;
     color: var(--text-color);
-    background-color: var(--light-bg);
+    background-color: var(--content-bg);
 }
 
 .top-banner {
@@ -174,6 +175,7 @@ body {
     padding-top: 120px;
     min-height: calc(100vh - 300px);
     padding-bottom: 40px;
+    background-color: var(--content-bg);
 }
 
 /* 通用按钮样式 */
