@@ -6,6 +6,11 @@
     <title>Footer Navigation</title>
     <link rel="stylesheet" href="../../resource/common.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        window.onload = function() {
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+        }
+    </script>
 </head>
 <body>
     <footer class="site-footer">
@@ -43,7 +48,7 @@
                     <td class="footer-cell">
                         <div class="footer-item">
                             <i class="fas fa-clock"></i>
-                            <span>Hours: Mon-Fri 9:00 AM - 5:00 PM, Sat 9:00 AM - 1:00 PM</span>
+                            <span>Hours: Monday, Wednesday, Friday 9:00 AM - 5:00 PM, Sunday 9:00 AM - 3:00 PM</span>
                         </div>
                     </td>
                     <td class="footer-cell">

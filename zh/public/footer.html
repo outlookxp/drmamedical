@@ -6,6 +6,11 @@
     <title>底部导航</title>
     <link rel="stylesheet" href="../../resource/common.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        window.onload = function() {
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+        }
+    </script>
 </head>
 <body>
     <footer class="site-footer">
@@ -43,7 +48,7 @@
                     <td class="footer-cell">
                         <div class="footer-item">
                             <i class="fas fa-clock"></i>
-                            <span>营业时间: 周一至周五 9:00 AM - 5:00 PM, 周六 9:00 AM - 1:00 PM</span>
+                            <span>营业时间: 每周一、三、五 9:00 AM - 5:00 PM, 每周日 9:00 AM - 3:00 PM</span>
                         </div>
                     </td>
                     <td class="footer-cell">
