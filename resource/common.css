@@ -111,11 +111,27 @@ body {
     border: 2px solid var(--primary-color);
     border-radius: 20px;
     transition: all 0.3s ease;
+    text-align: left;
 }
 
 .phone:hover {
     background-color: var(--primary-color);
     color: white;
+}
+
+.phone-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.phone-table td {
+    padding: 2px 0;
+    text-align: left;
+}
+
+.phone-table td:first-child {
+    padding-right: 10px;
+    white-space: nowrap;
 }
 
 /* 底部导航样式 */
@@ -251,4 +267,31 @@ body {
 
 .footer-copyright a:hover {
     color: var(--secondary-color);
+}
+
+.language-switch {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.lang-btn {
+    padding: 5px 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.lang-btn.active {
+    background-color: var(--primary-color);
+    color: white;
+    cursor: default;
 } 

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>马医生诊所 - 首页</title>
+    <link rel="stylesheet" href="../resource/common.css">
+    <script src="../resource/loadBanner.js"></script>
+    <script src="../resource/loadFooter.js"></script>
+    <style>
+        .home-content {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 40px;
+            background: linear-gradient(135deg, var(--light-bg) 0%, white 100%);
+        }
+        .text-section {
+            flex: 1;
+            text-align: right;
+            padding-right: 50px;
+            max-width: 50%;
+            padding-top: 0;
+        }
+        .image-section {
+            flex: 1;
+            text-align: left;
+            max-width: 50%;
+            padding-top: 0;
+        }
+        .main-text {
+            font-size: 48px;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin: 0;
+            line-height: 1.2;
+        }
+        .intro-text {
+            font-size: 16px;
+            color: var(--text-color);
+            line-height: 1.6;
+            margin-top: 30px;
+            max-width: 600px;
+            margin-left: auto;
+        }
+        .main-image {
+            max-width: 500px;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border: 3px solid white;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <div class="home-content">
+            <div class="text-section">
+                <h1 class="main-text">值得信赖的<br>家庭医生</h1>
+                <div class="intro-text">
+                    <p>如果你正在寻找一位可靠和专业的纽约家庭医生，我们很乐意为您提供帮助。马林可医生是一位获得认证的家庭医学专家，他在中西部大学芝加哥骨科医学院获得了医学博士学位。Northwell Plainview Hospital医院接受家庭医学住院医师培训，并在医学领域拥有超过<span id="yearsOfExperience"></span>年的经验。马医生专业、耐心、知识渊博，他相信预防保健和定期检查，以及倡导健康的生活方式，对于维护健康和幸福的生活至关重要。</p>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="../resource/2-10DrLinkeMado(28).jpg" alt="马医生照片" class="main-image">
+            </div>
+        </div>
+    </div>
+    <script>
+        // 计算从2012年到当前年份的差值
+        const currentYear = new Date().getFullYear();
+        const startYear = 2012;
+        const yearsOfExperience = currentYear - startYear;
+        document.getElementById('yearsOfExperience').textContent = yearsOfExperience;
+    </script>
+</body>
+</html> 
