@@ -1,5 +1,5 @@
 function loadBanner() {
-    fetch('public/banner.html')
+    fetch('/drmamedical/public/banner.html')
         .then(response => response.text())
         .then(html => {
             document.body.insertAdjacentHTML('afterbegin', html);
