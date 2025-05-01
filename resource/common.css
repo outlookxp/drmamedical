@@ -276,22 +276,41 @@ body {
 }
 
 .lang-btn {
-    padding: 5px 10px;
+    background: none;
     border: 1px solid var(--primary-color);
     border-radius: 4px;
-    text-decoration: none;
     color: var(--primary-color);
+    cursor: pointer;
     font-size: 14px;
+    padding: 5px 10px;
+    margin: 0 5px;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .lang-btn:hover {
     background-color: var(--primary-color);
     color: white;
+    cursor: pointer;
 }
 
 .lang-btn.active {
     background-color: var(--primary-color);
     color: white;
     cursor: default;
+}
+
+.map-container {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.map-container iframe {
+    display: block;
+    width: 100%;
+    height: 300px;
+    border: none;
 } 
