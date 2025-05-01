@@ -1,5 +1,5 @@
 function loadBanner() {
-    fetch('/resource/banner.html')
+    fetch('/public/banner.html')
         .then(response => response.text())
         .then(html => {
             document.body.insertAdjacentHTML('afterbegin', html);

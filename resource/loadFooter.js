@@ -1,5 +1,5 @@
 function loadFooter() {
-    fetch('/resource/footer.html')
+    fetch('/public/footer.html')
         .then(response => response.text())
         .then(html => {
             document.body.insertAdjacentHTML('beforeend', html);
