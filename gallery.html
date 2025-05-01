@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>诊所相册</title>
+    <link rel="stylesheet" href="resource/common.css">
+    <script src="resource/loadBanner.js"></script>
+    <script src="resource/loadFooter.js"></script>
+    <style>
+        .gallery-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+        .gallery-content h2 {
+            color: var(--primary-color);
+            font-size: 32px;
+            margin-bottom: 40px;
+            text-align: center;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        .gallery-content h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--secondary-color);
+        }
+        .gallery-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+        }
+        .gallery-item {
+            width: 100%;
+            max-width: 800px;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <div class="gallery-content">
+            <h2>诊所相册</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="resource/2-10DrLinkeMado(2).jpg" alt="诊所照片">
+                </div>
+                <div class="gallery-item">
+                    <img src="resource/2-10DrLinkeMado(2)-min.jpg" alt="诊所照片">
+                </div>
+                <div class="gallery-item">
+                    <img src="resource/2-10DrLinkeMado(9).jpg" alt="诊所照片">
+                </div>
+                <div class="gallery-item">
+                    <img src="resource/2-10DrLinkeMado(9)-min.jpg" alt="诊所照片">
+                </div>
+                <div class="gallery-item">
+                    <img src="resource/2-10DrLinkeMado(16).jpg" alt="诊所照片">
+                </div>
+                <div class="gallery-item">
+                    <img src="resource/2-10DrLinkeMado(16)-min.jpg" alt="诊所照片">
+                </div>
+                <div class="gallery-item">
+                    <img src="resource/2-10DrLinkeMado(28).jpg" alt="诊所照片">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,226 @@
+:root {
+    --primary-color: #2c5282;  /* 深蓝色，代表专业和信任 */
+    --secondary-color: #38a169;  /* 绿色，代表健康和生命 */
+    --accent-color: #4299e1;  /* 浅蓝色，用于强调 */
+    --text-color: #2d3748;  /* 深灰色，用于正文 */
+    --light-bg: #f7fafc;  /* 浅灰色背景 */
+    --border-color: #e2e8f0;  /* 边框颜色 */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--light-bg);
+}
+
+.top-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: white;
+    border-bottom: 2px solid var(--border-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 100px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.banner-left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo {
+    height: 80px;
+}
+
+.appointment-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 8px 16px;
+    border: 2px solid var(--primary-color);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.appointment-link:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.appointment-link i {
+    font-size: 18px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.phone {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 18px;
+    padding: 8px 16px;
+    border: 2px solid var(--primary-color);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.phone:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* 底部导航样式 */
+.site-footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 40px 0;
+    margin-top: 40px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.footer-row:last-child {
+    margin-bottom: 0;
+}
+
+.footer-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-item i {
+    font-size: 24px;
+    color: var(--secondary-color);
+}
+
+.footer-item a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 18px;
+}
+
+.footer-item a:hover {
+    color: var(--secondary-color);
+}
+
+.footer-item span {
+    font-size: 18px;
+}
+
+/* 内容区域通用样式 */
+.content-wrapper {
+    padding-top: 120px;
+    min-height: calc(100vh - 300px);
+    padding-bottom: 40px;
+}
+
+/* 通用按钮样式 */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+/* 通用卡片样式 */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* 通用标题样式 */
+.section-title {
+    color: var(--primary-color);
+    font-size: 32px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: var(--secondary-color);
+} 

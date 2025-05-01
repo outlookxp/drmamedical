@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系方式</title>
+    <link rel="stylesheet" href="resource/common.css">
+    <script src="resource/loadBanner.js"></script>
+    <script src="resource/loadFooter.js"></script>
+    <style>
+        .contact-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+        .contact-content h2 {
+            color: var(--primary-color);
+            font-size: 32px;
+            margin-bottom: 40px;
+            text-align: center;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        .contact-content h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--secondary-color);
+        }
+        .contact-info {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+            border: 1px solid var(--border-color);
+        }
+        .contact-item {
+            margin-bottom: 30px;
+        }
+        .contact-item:last-child {
+            margin-bottom: 0;
+        }
+        .contact-item h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 22px;
+            display: flex;
+            align-items: center;
+        }
+        .contact-item h3::before {
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: var(--secondary-color);
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .contact-item p {
+            color: var(--text-color);
+            line-height: 1.6;
+            font-size: 16px;
+            padding-left: 18px;
+        }
+        .map-container {
+            height: 400px;
+            background-color: #eee;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <div class="contact-content">
+            <h2>联系我们</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>地址</h3>
+                    <p>123 Main Street, New York, NY 10001</p>
+                </div>
+                <div class="contact-item">
+                    <h3>电话</h3>
+                    <p>718-799-0958</p>
+                </div>
+                <div class="contact-item">
+                    <h3>营业时间</h3>
+                    <p>周一至周五: 9:00 AM - 5:00 PM<br>
+                       周六: 9:00 AM - 1:00 PM<br>
+                       周日: 休息</p>
+                </div>
+            </div>
+            <div class="map-container">
+                <!-- 这里可以添加Google地图或其他地图服务 -->
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

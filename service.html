@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我们的服务</title>
+    <link rel="stylesheet" href="resource/common.css">
+    <script src="resource/loadBanner.js"></script>
+    <script src="resource/loadFooter.js"></script>
+    <style>
+        .service-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+        .service-content h2 {
+            color: var(--primary-color);
+            font-size: 32px;
+            margin-bottom: 40px;
+            text-align: center;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        .service-content h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--secondary-color);
+        }
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .service-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+            border-color: var(--primary-color);
+        }
+        .service-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+        .service-card p {
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <div class="service-content">
+            <h2>我们的服务</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3>家庭医疗</h3>
+                    <p>为全家人提供全面的医疗服务，包括常规体检、疫苗接种和健康咨询。</p>
+                </div>
+                <div class="service-card">
+                    <h3>慢性病管理</h3>
+                    <p>专业的慢性病管理服务，帮助患者更好地控制病情，提高生活质量。</p>
+                </div>
+                <div class="service-card">
+                    <h3>预防保健</h3>
+                    <p>提供预防性医疗服务，包括健康筛查、生活方式指导和疾病预防建议。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
