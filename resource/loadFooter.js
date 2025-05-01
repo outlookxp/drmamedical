@@ -1,5 +1,5 @@
 function loadFooter() {
-    fetch('/drmamedical/public/footer.html')
+    fetch('/resource/footer.html')
         .then(response => response.text())
         .then(html => {
             document.body.insertAdjacentHTML('beforeend', html);
