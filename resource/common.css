@@ -131,14 +131,15 @@ body {
     padding: 0 40px;
 }
 
-.footer-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
+.footer-table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-.footer-row:last-child {
-    margin-bottom: 0;
+.footer-cell {
+    padding: 10px;
+    vertical-align: top;
+    width: 50%;  /* 每列宽度相等 */
 }
 
 .footer-item {
@@ -150,6 +151,7 @@ body {
 .footer-item i {
     font-size: 24px;
     color: var(--secondary-color);
+    min-width: 24px;  /* 固定图标宽度 */
 }
 
 .footer-item a {
@@ -223,4 +225,28 @@ body {
     width: 50px;
     height: 3px;
     background-color: var(--secondary-color);
+}
+
+.footer-copyright {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-copyright span {
+    color: white;
+    margin-right: 20px;
+}
+
+.footer-copyright a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-copyright a:hover {
+    color: var(--secondary-color);
 } 

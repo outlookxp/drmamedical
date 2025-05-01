@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>免责声明</title>
+    <link rel="stylesheet" href="resource/common.css">
+    <script src="resource/loadBanner.js"></script>
+    <script src="resource/loadFooter.js"></script>
+    <style>
+        .disclaimer-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+        .disclaimer-content h2 {
+            color: var(--primary-color);
+            font-size: 32px;
+            margin-bottom: 30px;
+            text-align: center;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        .disclaimer-content h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--secondary-color);
+        }
+        .disclaimer-content p {
+            line-height: 1.8;
+            color: var(--text-color);
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <div class="disclaimer-content">
+            <h2>免责声明</h2>
+            <p>本网站提供的信息仅供参考，不构成医疗建议。在做出任何医疗决定之前，请咨询您的医生。</p>
+            <p>我们尽最大努力确保网站上提供的信息准确和最新，但不保证其完整性或准确性。</p>
+            <p>通过使用本网站，您同意本免责声明的条款。</p>
+        </div>
+    </div>
+</body>
+</html> 
