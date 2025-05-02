@@ -318,7 +318,7 @@ body {
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     position: relative;
-    padding-bottom: 30%; /* 进一步降低高度 */
+    padding-bottom: 30%;
     height: 0;
 }
 
@@ -335,33 +335,33 @@ body {
 @media screen and (max-width: 768px) {
     .top-banner {
         flex-direction: column;
-        height: auto;
-        padding: 15px;
+        height: 50px; /* 将高度缩小到50% */
+        padding: 10px;
     }
 
     .banner-left {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        gap: 15px;
-        margin-bottom: 15px;
+        gap: 10px;
+        margin-bottom: 0;
     }
 
     .logo {
-        height: 60px;
+        height: 30px; /* 相应缩小logo */
     }
 
     .appointment-link {
-        width: 100%;
-        justify-content: center;
+        font-size: 14px;
+        padding: 4px 8px;
     }
 
     .nav-links {
-        margin: 15px 0;
+        display: none; /* 在移动端隐藏导航链接 */
     }
 
     .phone {
-        width: 100%;
-        text-align: center;
+        font-size: 14px;
+        padding: 4px 8px;
     }
 
     .phone-table {
@@ -431,7 +431,13 @@ body {
     .map-container {
         margin: 0 -15px 20px;
         border-radius: 0;
-        padding-bottom: 35%; /* 移动端稍高一些 */
+        padding-bottom: 35%;
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
     }
 
     .map-container iframe {
@@ -476,10 +482,32 @@ body {
     }
 
     .map-container {
-        padding-bottom: 40%; /* 手机端再高一些 */
+        padding-bottom: 40%;
     }
 
     .map-container iframe {
         height: 180px;
+    }
+}
+
+.main-content {
+    padding: 20px;
+    padding-top: 120px; /* 增加顶部内边距，为固定定位的banner留出更多空间 */
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: calc(100vh - 200px);
+}
+
+/* 移动设备适配 */
+@media (max-width: 768px) {
+    .main-content {
+        padding-top: 100px; /* 平板设备上增加padding */
+    }
+}
+
+/* 小屏幕手机适配 */
+@media (max-width: 480px) {
+    .main-content {
+        padding-top: 90px; /* 手机设备上进一步增加padding */
     }
 } 
